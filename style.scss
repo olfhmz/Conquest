@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+$font-header: "Playfair Display";
+$font-description: "Roboto";
+$font-price: "Prata";
+
+.text_desc{
+  font-family: $font-description;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba($color: #1B1A17, $alpha: .75);
+}
+
+.text_head{
+  font-family: $font-header;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  color: #1B1A17;
+}
+
+.link {
+  text-decoration: none;
+  color: #555248;
+
+  &:hover, &:active, &:focus {
+    opacity: .75;
+  }
+}
+
+.wraper-97 {
+  margin: 0 97px 0 97px;
+}
+
+// Header
+.header_wraper {
+  margin: 0 97px 0 97px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+	justify-content: space-between;
+  align-content: center;
+  height: 100%;
+}
+
+header {
+  position: fixed;
+	top: 0;
+	left: 0;
+  width: 100%;
+  height: 85px;
+  transition: .2s linear;
+	z-index: 999;
+  background-color: #FDFDFB;
+}
+
+.logo_pic {
+  width: 103px;
+  height: 26px;
+}
+
+// .header_logo {
+//   margin-right: 20px;
+// }
+
+.menu-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-list_link {
+  margin-right: 65px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header_icon {
+  margin-right: 23px;
+}
+
+// Fst screen
+.fst-screen {
+  width: 100%;
+  height: 768px;
+  background: url(./img/elipse_main.png) no-repeat;
+  // background-position: 400px; 
+  // поглядеть на позицию а то шо-то не совпадает
+  margin-top: 84px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.watch_main {
+  margin: -11px 662px;
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  left: 583px;
+  top: 138px;
+
+  font-family: $font-price;
+  font-size: 16px;
+  line-height: 22px;
+  
+}
+
+.ruble {
+  position: absolute;
+  top: 141px;
+  left: 648px;
+}
+
+.diametr {
+  font-family: $font-price;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+  top: 636px;
+  left: 1130px;
+}
+
+.line {
+  content: " ";
+  height: 1px;
+  width: 50px;
+  background-color:#8B8371;
+  position: absolute;
+}
+
+.line-p {
+  top: 148px;
+  left: 673px;
+}
+
+.line-d {
+  top: 646px;
+  left: 1065px;
+}
+
+.fst-text {
+  position: absolute;
+  left: 185px;
+  top: 236px;
+}
+
+.fst-text_headers {
+  width: 408px;
+  height: 95px;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: " ";
+    height: 1px;
+    width: 50px;
+    background-color:#8B8371;
+    position: absolute;
+    left: -65px;
+    top: 33px;
+  }
+}
+
+.fst-text_head {
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.fst-text_s-desc {
+  font-weight: 300;
+  height: 34px;
+  width: 270px;
+  margin-bottom: 65px;
+}
+
+.btn_to-catalog {
+  height: 64px;
+  width: 205px;
+  color: #fff;
+  background-color: #444240;
+
+  font-family: $font-description;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+  &:hover {
+    background-color: rgba($color: #444240, $alpha: .75);
+  }
+}
+
+// Snd screen
+.snd-screen {
+  height: 640px;
+}
+
+.snd-text_head {
+  text-align: center;
+  margin: auto;
+}
+
+.view-all_snd-head {
+  float: right;
+  position: relative;
+  
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+
+
+  &::after {
+    content: " ";
+    height: 1px;
+    width: 101px;
+    background-color: #C4C0B6;
+    position: absolute;
+    top: 23px;
+    left: 0;
+  }
+}
+
+.watch-card {
+  height: 467px;
+  width: 370px;
+  background: url(./img/watch_back.png);
+}
+
+.watch-card_title {
+  padding: 40px 0 0 40px;
+}
+
+.watch-name {
+  margin-bottom: 10px;
+}
+
+.watch-price {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.watch-price_num {
+  margin-right: 4px;
+}
+
+.watch-pic {
+  width: 313px;
+  height: 313px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detail {
+  padding-left: 88px;
+  position: relative;
+
+  &::before {
+    content: " ";
+    height: 1px;
+    width: 30px;
+    background-color: #8B8371;
+    position: absolute;
+    top: 9px;
+    left: 40px;
+  }
+}
+
+.watch-cards {
+  margin-top: 52px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+// banner
+
+.banner {
+  height: 520px;
+  background: url(./img/banner_back.png) no-repeat;
+  background-size: 100%;
+}
+
+.banner-card {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.banner-pic {
+  margin: 52px 70px 0 177px;
+  height: 414px;
+  width: 512px;
+}
+
+.banner_text {
+  margin-top: 140px;
+}
+
+.banner_text-desc {
+  margin-top: 38px;
+  width: 376px;
+}
+
+.banner_btn {
+  margin-top: 45px;
+  background-color: #D4B098;
+
+  &:hover {
+    background-color: #a88d7b;
+  }
+}
+
+.num_of_card {
+  font-family: $font-price;
+  font-size: 12px;
+  margin: 0 20px;
+}
+
+.arroyes {
+  position: absolute;
+  bottom: -35px;
+  left: 577px;
+}
+
+// 3 screen
+
+.trd_screen {
+  margin: 80px 97px 90px 97px;
+  height: 460px;
+  display: flex;
+  flex-wrap: nowrap;
+  // justify-content: space-between;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.trd_screen-text {
+  margin-top: 140px;
+}
+
+.trd_screen-desc {
+  width: 334px;
+  margin-top: 40px;
+}
+
+.trd_screen-icon {
+  margin-top: 118px;
+}
+
+.link-to {
+  margin-right: 18px;
+}
+
+.trd_screen-pics {
+  margin-left: 71px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.pic-s {
+  height: 228px;
+  width: 242px;
+  margin: 0 10px 10px 0;
+}
+
+.pic-l {
+  height: 465px;
+  width: 377px;
+}
+
+// footer
+
+footer {
+  height: 275px;
+  background-color: #444240;
+  padding: 79px 185px 0 185px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.foot-item-column, .footer-link {
+  color: rgba($color: #fff, $alpha: .75);
+  font-size: 12px;
+}
+
+.foot-item-column {
+  margin-bottom: 15px;
+}
+
+.foot-item-column_head {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.foot-column {
+  padding-left: 118px;
+}
+
+.fst-column {
+  padding-left: 0;
+}
